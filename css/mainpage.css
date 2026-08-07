@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FontDachi";
+  src: url("../fonts/DachitheLynx.otf") format("opentype");
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 20px 115px;
+  font-family: "FontDachi", sans-serif;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  font-size: 20px;
+  a {
+    color: #0b4592;
+    &:hover {
+      border-bottom: 2px solid #0b4592;
+    }
+  }
+  li:nth-child(4) a {
+    color: #39861e;
+    &:hover {
+      border-bottom: 2px solid #39861e;
+    }
+  }
+}
+
+.user-actions {
+  display: flex;
+  align-items: end;
+  gap: 60px;
+}
