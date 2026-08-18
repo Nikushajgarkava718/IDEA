@@ -169,6 +169,10 @@ input:focus {
   transform: translateY(1px);
 }
 
+input.invalid {
+  border-color: #e02424;
+}
+
 @media (max-width: 760px) {
   .card {
     flex-direction: column;

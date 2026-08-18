@@ -21,25 +21,47 @@
           დროს, ნებისმიერი ადგილიდან და შეინახეთ ყველაფერი ერთ სივრცეში.
         </p>
 
-        <form>
+        <form id="reg-form" novalidate>
           <label for="name">სახელი</label>
-          <input id="name" type="text" placeholder="თქვენი სახელი" />
+          <input id="name" type="text" placeholder="თქვენი სახელი" required />
 
           <label for="surname">გვარი</label>
-          <input id="surname" type="text" placeholder="თქვენი გვარი" />
+          <input id="surname" type="text" placeholder="თქვენი გვარი" required />
 
           <label for="phone">ნომერი</label>
-          <input id="phone" type="tel" placeholder="555 555 555" />
+          <input
+            id="phone"
+            type="tel"
+            placeholder="555 555 555"
+            pattern="[0-9\s]+"
+            inputmode="numeric"
+            title="მხოლოდ ციფრებია დასაშვები"
+            required
+          />
 
           <label for="email">ელ.ფოსტა</label>
-          <input id="email" type="email" placeholder="Example@gmail.com" />
+          <input
+            id="email"
+            type="email"
+            placeholder="Example@gmail.com"
+            required
+          />
 
           <label for="password">პაროლი</label>
-          <input id="password" type="password" placeholder="**********" />
+          <input
+            id="password"
+            type="password"
+            placeholder="**********"
+            minlength="8"
+            pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.&lt;&gt;\/?~`]).{8,}"
+            title="მინიმუმ 8 სიმბოლო, უნდა შეიცავდეს ასოს, ციფრს და სპეციალურ სიმბოლოს"
+            required
+          />
 
           <button class="submit-btn" type="submit">რეგისტრაცია</button>
         </form>
       </div>
     </div>
+    <script src="js/registration.js"></script>
   </body>
 </html>
