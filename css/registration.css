@@ -38,7 +38,7 @@ body::before {
   background-size: cover;
   background-position: center;
 
-  /* ==== blur-ის სიმძლავრე — შეცვალე px მნიშვნელობა ==== */
+  /* ==== blur-ის სიმძლავრე  ==== */
   filter: blur(30px);
 
   /* რომ blur-ის კიდეები არ გამოჩნდეს ეკრანის ბოლოებში */
