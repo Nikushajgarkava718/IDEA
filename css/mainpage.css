@@ -205,7 +205,7 @@ header {
 
 #aboutus {
   height: 1080px;
-  padding: 100px 0px;
+  /* padding: 50px 0px; */
 }
 
 .gallery {
@@ -295,8 +295,8 @@ header {
 }
 
 .field {
-  height: 1080px;
-  padding: 80px 150px 40px 150px;
+  min-height: 1080px;
+  padding: 80px 180px 40px 180px;
   .field-title {
     font-family: "FontDachi", sans-serif;
     font-size: 60px;
@@ -304,12 +304,12 @@ header {
   }
 
   .field-cards {
-    margin-top: 20px;
+    /* margin-top: 10px; */
     display: flex;
     justify-content: space-between;
   }
   .field-card {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -325,6 +325,14 @@ header {
     &:hover {
       transform: scale(1.02);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 428px;
+      height: 237px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px;
     }
 
     h2 {
@@ -350,18 +358,18 @@ header {
 }
 
 .more {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   button {
-    color: #c48091;
+    color: #0735719c;
     background: none;
     border: none;
     font-family: "FontDachi", sans-serif;
     font-size: 24px;
     &:hover {
-      color: #a91e40;
+      color: #073571;
     }
   }
 }
