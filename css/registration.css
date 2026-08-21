@@ -151,7 +151,7 @@ input:focus {
   background: var(--navy);
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -163,7 +163,7 @@ input:focus {
 }
 
 .submit-btn:hover {
-  background: #0a2352;
+  background: #279e62;
 }
 .submit-btn:active {
   transform: translateY(1px);
